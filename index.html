@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Suplementos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="menu-icon" id="menu-icon">
+                &#9776;
+            </div>
+            <div class="logo">
+                <h1>Suplementos el wiwichucaliente</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button>Buscar</button>
+            </div>
+            <div class="cart-icon">
+                <a href="#carrito">&#128722;</a>
+            </div>
+        </div>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="#proteina">PROTEÍNA</a></li>
+                <li><a href="#creatina">CREATINA</a></li>
+                <li><a href="#aminoacidos">AMINOÁCIDOS</a></li>
+                <li><a href="#preentrenos">PRE-ENTRENOS</a></li>
+                <li><a href="#paquetes">PAQUETES</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="pollo.jpg" alt="Imagen 1" width="100" height="100">
+                    <img src="creatina.jpg" alt="Imagen 2" width="100" height="100">
+                    <img src="prentreno.jpg" alt="Imagen 3" width="100" height="100">
+                </div>
+            </div>
+            <button class="carousel-button left" id="prev">&#10094;</button>
+            <button class="carousel-button right" id="next">&#10095;</button>
+        </section>
+
+        <section id="productos" class="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="producto">
+                <img src="producto1.jpg" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Descripción del producto 1.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Descripción del producto 2.</p>
+                <button>Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="producto3.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Descripción del producto 3.</p>
+                <button>Comprar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Suplementos Saludables. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+        const carouselSlide = document.querySelector('.carousel-slide');
+        const images = document.querySelectorAll('.carousel-slide img');
+        
+        let counter = 0;
+        const size = images[0].clientWidth;
+
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+        next.addEventListener('click', () => {
+            if (counter >= images.length - 1) return;
+            carouselSlide.style.transition = "transform 0.4s ease-in-out";
+            counter++;
+            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        });
+
+        prev.addEventListener('click', () => {
+            if (counter <= 0) return;
+            carouselSlide.style.transition = "transform 0.4s ease-in-out";
+            counter--;
+            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        });
+    </script>
+</body>
+</html>
