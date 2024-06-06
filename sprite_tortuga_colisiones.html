@@ -21,3 +21,25 @@
         const obstaclewidth=50;//ajusta el ancho del obstaculo
         const obstacleheight=50;//ajusta el alto del obstaculo
         const obstacleimage=new Image();
+
+        let gravity=1;
+        let y =canvas.height-spriteheight;
+        let currentRow=0;
+        let obstacles=[];
+
+        //configurar eventos
+        function setupEventListeners(){
+document.addEventListener('keydown',handleKeyDown);
+        }
+
+        function handleKeyDown(event){
+            if(event.key==='ArrowUp'&&!jumping){
+                startJump();
+            }
+        }
+
+        //iniciar salto
+        function startJump(){
+        jumping=true;
+        jumpHeighy=0;
+        }
