@@ -129,13 +129,16 @@ main {
 }
 
 .carousel {
+    background-color: #4CAF50;
     position: relative;
     max-width: 300px;
     margin: 20px auto;
     overflow: hidden;
+
 }
 
 .carousel-container {
+    
     display: flex;
     width: 50%;
 }
