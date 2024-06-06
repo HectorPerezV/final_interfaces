@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            canvas{
+                border: 0px solid black;
+            }
+            </style>
+    </head>
+<body>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <script>
+        //variables globales
+        const canvas=document.getElementById('gameCanvas');
+        const ctx=canvas.getContex('2d');
+        const spritewidth=150;
+        const spriteheight=200;
+        const spriteimage=new Image();
+        spriteimage.src = 'tortuga.png';//asegurate de cambiar la ruta del sprite
+
+        const obstaclewidth=50;//ajusta el ancho del obstaculo
+        const obstacleheight=50;//ajusta el alto del obstaculo
+        const obstacleimage=new Image();
