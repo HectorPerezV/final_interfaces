@@ -1,0 +1,434 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4a81a;
+    
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .contenedor {
+    position:relative;
+    width: 1000px;
+    background-color: white;
+    animation-duration: 0.4s;
+    animation-name: slidein;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+box-shadow: #666;
+    
+  }
+  
+  @keyframes slidein {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+   
+  .header-navigation {
+    width: 1600px; 
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1c5777;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in;
+    
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  
+  .header-navigation-1,
+  .items,
+  .input-field-with-button,
+  .items-8 {
+    display: flex;
+    align-items: center;
+    width: 1580px;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  
+  .boton {
+    position: absolute;
+    right: 20px; 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .field {
+    margin-right: 10px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: white;
+  }
+  
+  .label-placeholder {
+    font-size: 16px;
+  }
+  
+  .button-ani {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button-ani:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .a{text-decoration: none;}
+  
+  .items .page,
+  .items-8 .page-9,
+  .page-2,
+  .page-3,
+  .page-a,
+  .page-b,
+  .page-4 {
+    margin-right: 30px;
+    margin-left: 0px; 
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .items .page:hover,
+  .items-8 .page-9:hover,
+  .page-2:hover,
+  .page-3:hover,
+  .page-a:hover,
+  .page-b:hover,
+  .page-4:hover {
+    color: #007BFF;
+  }
+  .nutri-fit:hover {
+    color: #2bd604;
+  }
+  
+  
+.nutri-fit,
+.nutri-fit-c {
+  font-size: 24px;
+  position: absolute;
+  font-weight: bold;
+  cursor: pointer;
+  left: 3%;
+  color: white;
+  transition: color 0.3s;
+  top: 15px;
+}
+  
+  .input-field-with-button .field-4 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .field-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .label-placeholder-5 {
+    margin-left: 10px;
+  }
+  
+  .img {
+    width: 1600px;
+    height: 200px;
+    background-image: url('https://images.expertreviews.co.uk/wp-content/uploads/2024/01/Best-protein-powder-scaled.jpg');
+    background-size:cover;
+    background-position:bottom;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    animation: fadeIn 0.8s ease-in;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .inicio-d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rectangle {
+    background-color: #143D59;
+    width: 510px;
+  }
+  
+  .mas-todos {
+    text-align: center;
+    color: white;
+  }
+  
+  .nutri-fit-e {
+    font-size: 48px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .mejores-formulas-mamei {
+    font-size: 24px;
+  }
+  
+  .flex-row-a,
+  .flex-row-ccf,
+  .flex-row-dbd,
+  .flex-row-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .product-card{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image{
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .image2{
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .image2{
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .image3{
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .image4{
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .image5{
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .image6{
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .image7 {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .image8 {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+  .image9 {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+  }
+
+  .copy,
+  .copy-11,
+  .copy-16,
+  .copy-1b,
+  .copy-23,
+  .copy-28,
+  .copy-2e,
+  .copy-33 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .producto1,
+  .producto2,
+  .producto,
+  .producto-1c,
+  .producto-24,
+  .producto-29,
+  .product,
+  .product-34 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .descripcion {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .price,
+  .price-13,
+  .price-18,
+  .price-1e,
+  .price-25,
+  .price-2b,
+  .price-30,
+  .price-36 {
+    font-size: 16px;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  
+  .flex-row-b {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .items-38,
+  .items-3a,
+  .items-3c {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .envios-gratis,
+  .ingredientes-premium,
+  .ahorra-dinero {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .page-39,
+  .page-3b,
+  .page-3d {
+    font-size: 14px;
+    color: #007BFF;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .page-39:hover,
+  .page-3b:hover,
+  .page-3d:hover {
+    color: #0056b3;
+  }
+  
+  .nutri-fit-foot {
+    position: absolute;
+    font-size:large;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in;
+    right: 20%;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .buttons-icon,
+  .buttons-icon-40,
+  .buttons-icon-43,
+  .buttons-icon-46 {
+    margin: 0 10px;
+  }
+  
+  .icon,
+  .icon-41,
+  .icon-44,
+  .icon-47 {
+    width: 40px;
+    height: 40px;
+    background-color:grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .icon:hover,
+  .icon-41:hover,
+  .icon-44:hover,
+  .icon-47:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  .icon i,
+  .icon-41 i,
+  .icon-44 i,
+  .icon-47 i {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  
