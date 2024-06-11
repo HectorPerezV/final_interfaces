@@ -52,9 +52,10 @@ body {
 .items-8 {
   display: flex;
   align-items: center;
-  width: 1440px;
+  width: 1580px;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  
 }
 
 .boton {
@@ -169,7 +170,7 @@ body {
   width: 510px;
 }
 
-.mas-vendidos {
+.mas-todos {
   text-align: center;
   color: white;
 }
@@ -277,12 +278,6 @@ body {
   border-top: 1px solid #e0e0e0;
 }
 
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: #e0e0e0;
-  margin-bottom: 20px;
-}
 
 .flex-row-b {
   display: flex;
@@ -323,10 +318,12 @@ body {
   color: #0056b3;
 }
 
-.nutri-fit-3e {
-  font-size: 24px;
+.nutri-fit-foot {
+  position: absolute;
+  font-size:large;
   font-weight: bold;
   animation: fadeIn 2s ease-in;
+  right: 20%;
 }
 
 .social-icons {
