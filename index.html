@@ -1,106 +1,148 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suplementos</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="top-bar">
-            <div class="menu-icon" id="menu-icon">
-               
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wiwichuscalientes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-navigation">
+        <div class="header-navigation-1">
+          <div class="boton">
+            <div class="field">
+              <span class="label-placeholder">Buscar</span>
             </div>
-            <div class="logo">
-                <h1>PowerPalace Supplements</h1>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar...">
-                <button>Buscar</button>
-            </div>
-            <div class="cart-icon">
-                <a href="#carrito">&#128722;</a>
-            </div>
+            <div class="button-new"><span class="submit">Buscar</span></div>
+          </div>
+          <div class="items">
+            <span class="page">Page</span><span class="page-2">Page</span
+            ><span class="page-3">Page</span><span class="page-4">Page</span>
+          </div>
+          <span class="nutri-fit">NutriFit</span>
         </div>
-        <nav id="nav-menu" class="nav-menu">
-            <ul>
-                <li><a href="#proteina">PROTEÍNA</a></li>
-                <li><a href="#creatina">CREATINA</a></li>
-                <li><a href="#aminoacidos">AMINOÁCIDOS</a></li>
-                <li><a href="#preentrenos">PRE-ENTRENOS</a></li>
-                <li><a href="#paquetes">PAQUETES</a></li><br>
-                <li><a href="#productosall">TODOS LOS PRODUCTOS</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="carousel">
-            <
-            <div class="carousel-container">
-                <div class="carousel-slide">
-                    <img src="pollo.jpg" alt="Imagen 1" width="100" height="100">
-                    <img src="creatina.jpg" alt="Imagen 2" width="100" height="100">
-                    <img src="prentreno.jpg" alt="Imagen 3" width="100" height="100">
-                </div>
-            </div>
-            <button class="carousel-button left" id="prev">&#10094;</button>
-            <button class="carousel-button right" id="next">&#10095;</button>
-            
-        </section>
-
-        <section id="productos" class="productos">
-            <h2>LOS MAS VENDIDOS</h2>
-            <div class="producto">
-                <img src="prote.jpg" alt="Producto 1" height="250" width="150">
-                <h3>Producto 1</h3>
-                <p>Descripción del producto 1.</p>
-                <button>Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="pollo.jpg" alt="Producto 2" height="250" width="150">
-                <h3>Producto 2</h3>
-                <p>Descripción del producto 2.</p>
-                <button>Comprar</button>
-            </div>
-            <div class="producto">
-                <img src="prentreno.jpg" alt="Producto 3" height="250" width="150">
-                <h3>Producto 3</h3>
-                <p>Descripción del producto 3.</p>
-                <button>Comprar</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p> cosas de saludables</p>
-    </footer>
-
-    <script>
-        const prev = document.getElementById('prev');
-        const next = document.getElementById('next');
-        const carouselSlide = document.querySelector('.carousel-slide');
-        const images = document.querySelectorAll('.carousel-slide img');
-        
-        let counter = 0;
-        const size = images[0].clientWidth;
-
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-        next.addEventListener('click', () => {
-            if (counter >= images.length - 1) return;
-            carouselSlide.style.transition = "transform 0.4s ease-in-out";
-            counter++;
-            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-        });
-
-        prev.addEventListener('click', () => {
-            if (counter <= 0) return;
-            carouselSlide.style.transition = "transform 0.4s ease-in-out";
-            counter--;
-            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-        });
-    </script>
-</body>
+       </div>
+      <div class="img">
+        <div class="inicio-d">
+          <span class="nutri-fit-e">NutriFit</span
+          ><span class="mejores-formulas-mamei"
+            >Las Mejores Formulas Para Estar Mamei</span
+          >
+        </div>
+      </div>
+      <div class="rectangle"><h1 class="mas-vendidos">Más Vendidos</h1></div>
+      
+      <div class="flex-row-a">
+        <div class="product-card">
+          <div class="image"></div>
+          <div class="copy">
+            <span class="producto1">producto1 </span
+            ><span class="description-of-product">Description of product</span
+            ><span class="price">$XX.YY</span>
+          </div>
+        </div>
+        <div class="product-card-f">
+          <div class="image-10"></div>
+          <div class="copy-11">
+            <span class="producto2">producto2</span
+            ><span class="description-of-product-12"
+              >Description of product</span
+            ><span class="price-13">$XX.YY</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex-row-ccf">
+        <div class="product-card-14">
+          <div class="image-15"></div>
+          <div class="copy-16">
+            <span class="producto">producto3</span
+            ><span class="description-of-product-17"
+              >Description of product</span
+            ><span class="price-18">$XX.YY</span>
+          </div>
+        </div>
+        <div class="product-card-19">
+          <div class="image-1a"></div>
+          <div class="copy-1b">
+            <span class="producto-1c">producto4 </span
+            ><span class="description-of-product-1d"
+              >Description of product</span
+            ><span class="price-1e">$XX.YY</span>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-1f"></div>
+      <h1 class="mas-vendidos-20">Paquetes</h1>
+      <div class="flex-row-dbd">
+        <div class="product-card-21">
+          <div class="image-22"></div>
+          <div class="copy-23">
+            <span class="producto-24">producto5 </span
+            ><span class="descripcion">descripcion</span
+            ><span class="price-25">$XX.YY</span>
+          </div>
+        </div>
+        <div class="product-card-26">
+          <div class="image-27"></div>
+          <div class="copy-28">
+            <span class="producto-29">producto6 </span
+            ><span class="descripcion-2a">descripcion</span
+            ><span class="price-2b">$XX.YY</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex-row-cc">
+        <div class="product-card-2c">
+          <div class="image-2d"></div>
+          <div class="copy-2e">
+            <span class="product">producto7 </span
+            ><span class="descripcion-2f">descripcion</span
+            ><span class="price-30">$XX.YY</span>
+          </div>
+        </div>
+        <div class="product-card-31">
+          <div class="image-32"></div>
+          <div class="copy-33">
+            <span class="product-34">producto8 </span
+            ><span class="descripcion-35">descripcion</span
+            ><span class="price-36">$XX.YY</span>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-37"></div>
+      <div class="footer">
+        <div class="divider"></div>
+        <div class="flex-row-b">
+          <div class="items-38">
+            <span class="envios-gratis">Envios Gratis</span
+            ><span class="page-39">Page</span>
+          </div>
+          <div class="items-3a">
+            <span class="ingredientes-premium">Ingredientes Premium</span
+            ><span class="page-3b">Page</span>
+          </div>
+          <div class="items-3c">
+            <span class="ahorra-dinero">Ahorra Dinero</span
+            ><span class="page-3d">Page</span>
+          </div>
+          <span class="nutri-fit-3e">NutriFit</span>
+        </div>
+        <div class="social-icons">
+          <div class="buttons-icon">
+            <div class="icon"><div class="icon-3f"></div></div>
+          </div>
+          <div class="buttons-icon-40">
+            <div class="icon-41"><div class="icon-42"></div></div>
+          </div>
+          <div class="buttons-icon-43">
+            <div class="icon-44"><div class="icon-45"></div></div>
+          </div>
+          <div class="buttons-icon-46">
+            <div class="icon-47"><div class="icon-48"></div></div>
+          </div>
+        </div>
+      </div>
+  </body>
 </html>
